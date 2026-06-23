@@ -68,6 +68,20 @@ Another common overlap occurs when someone responds emotionally to a topic while
 
 Decision rule: If the comment is directly engaging with a specific claim made by another user, whether by agreeing or disagreeing, label it as argument. If it mainly expresses an emotion, feeling, or personal response without addressing a particular claim, label it as reaction. The key distinction is whether the post is participating in a discussion or simply expressing a response.
 
+### Difficult Annotation Cases
+
+**Case 1:** "Anuv Jain not so good"
+- Could be: `hot_take` (bold opinion) or `argument` (direct pushback in a thread)
+- Decision: Labeled `argument` — it appears as a direct reply to someone recommending Anuv Jain, so the primary intent is pushback against a specific claim.
+
+**Case 2:** "Listen to it when it rains"
+- Could be: `recommendation` (suggesting how to listen) or `hot_take` (asserting an opinion about the song)
+- Decision: Labeled `hot_take` — it's not directing someone to a song, it's making a claim about the best listening context. No music is being recommended.
+
+**Case 3:** "Love Demons remind me of old 70s Bollywood soundtracks for some reason."
+- Could be: `reaction` (personal emotional impression) or `hot_take` (comparative claim about the song's sound)
+- Decision: Labeled `hot_take` — it makes a specific comparative claim about the song's sound rather than just expressing a feeling about it.
+
 ## Data Collection Plan
 
 - Source: r/MusicIndia and music-related threads from r/india
